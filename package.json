@@ -1,0 +1,47 @@
+{
+  "name": "apple-ui",
+  "version": "0.0.0",
+  "description": "An ui kit with many components looks like apple.com website.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build:css": "sh ./scripts/build-css.sh",
+    "build:package": "sh ./scripts/build-package.sh",
+    "build:all": "sh ./scripts/build-all.sh",
+    "upgrade:dep": "yarn upgrade-interactive --latest ",
+    "publish": "sh ./scripts/publish.sh",
+    "site:dev": "vite",
+    "site:build": "vue-tsc --noEmit && vite build",
+    "site:serve": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/initdc/apple-ui.git"
+  },
+  "keywords": [
+    "ui",
+    "vue",
+    "css"
+  ],
+  "author": "initdc",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/initdc/apple-ui/issues"
+  },
+  "homepage": "https://github.com/initdc/apple-ui#readme",
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.2.2",
+    "@vue/compiler-sfc": "^3.0.11",
+    "@vue/test-utils": "^1.1.4",
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.13",
+    "postcss-import": "^14.0.1",
+    "postcss-nested": "^5.0.5",
+    "rollup": "^2.45.2",
+    "tailwindcss": "^2.1.2",
+    "typescript": "^4.2.4",
+    "vite": "^2.2.3"
+  },
+  "dependencies": {
+    "vue": "^3.0.11"
+  }
+}

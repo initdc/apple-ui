@@ -1,0 +1,28 @@
+._affix {
+    backdrop-filter: blur(20px);
+    @apply w-full h-12 md:h-13 relative sticky top-0 bg-white bg-opacity-70
+}
+._affix *{
+    @apply text-xs my-auto
+}
+
+._affix-title{
+    @apply text-lg font-bold
+}
+
+._affix-subtitle{
+    @apply ml-2 text-lg text-subtitle
+}
+
+._affix ul{
+    @apply flex flex-row mr-2
+}
+
+._affix li{
+    @apply mx-4 text-affix-text
+}
+
+._affix a{
+    @apply text-affix-link
+}
+

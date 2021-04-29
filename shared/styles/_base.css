@@ -1,0 +1,15 @@
+@import "tailwindcss/base";
+
+@import '../fonts/material.css';
+
+button:focus{
+    outline: none;
+}
+
+.icon{
+    @apply flex-shrink-0 my-auto
+}
+
+._inner{
+    @apply w-auto max-w-screen-lg h-full flex mx-auto px-3
+}

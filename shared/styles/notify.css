@@ -1,0 +1,13 @@
+._notify {
+    @apply w-full h-11 bg-notify-bg
+    text-notify-text text-center
+}
+
+._notify-content{
+    @apply flex-grow m-auto
+    text-sm
+}
+
+._notify-close {
+    @apply flex-shrink-0 mr-0
+}

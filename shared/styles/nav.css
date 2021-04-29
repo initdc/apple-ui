@@ -1,0 +1,26 @@
+._nav {
+    backdrop-filter: saturate(180%) blur(20px);
+    @apply w-full h-12 md:h-11 bg-black opacity-80
+}
+
+._nav *{
+    @apply text-nav-text
+    hover:text-nav-hover
+}
+
+._nav-menu{
+    @apply md:hidden
+}
+._nav-home{
+    @apply mx-auto md:ml-0
+}
+._nav-end{
+    @apply mr-0
+}
+._nav ul {
+    @apply hidden md:flex px-3 my-auto flex-grow flex-row
+    text-sm	font-light
+}
+._nav li {
+    @apply mx-auto my-auto
+}
