@@ -19,7 +19,7 @@
 }
 ._nav ul {
     @apply hidden md:flex px-3 my-auto flex-grow flex-row
-    text-sm	font-light
+    text-[14px]
 }
 ._nav li {
     @apply mx-auto my-auto

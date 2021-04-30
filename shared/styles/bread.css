@@ -1,0 +1,10 @@
+._bread{
+    @apply text-[12px] text-footer-title
+}
+
+._bread ._bread-item{
+    @apply mx-1
+}
+._bread ul{
+    @apply flex flex-row
+}

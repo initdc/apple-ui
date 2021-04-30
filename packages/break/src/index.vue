@@ -1,22 +1,11 @@
 <template>
-  <div class="_break">
-  </div>
+  <hr class="_break">
 </template>
 
 <script lang="ts">
-import {ref} from 'vue'
 
 export default {
-  name: "ApBreak",
-
-  props: {
-    status: {
-      type: Boolean,
-      default: true
-    }
-  },
-  setup(props) {
-  }
+  name: "ApBreak"
 }
 </script>
 

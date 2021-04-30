@@ -1,21 +1,28 @@
 <template>
-  <div class="_blank">
-
+  <div class="_bread">
+    <slot><span class="icon material-icons">home</span></slot>
   </div>
 </template>
 
 <script lang="ts">
 
 export default {
-  name: "ApBlank",
+  name: "ApBread",
 
   props: {
-    status: {
+    symbol: {
       type: String,
-      default: null
+      default: '>'
     }
   },
-  setup(props) {
+  setup(props){
+    let separator = props.symbol
+    return { separator }
+  },
+  provide() {
+    return {
+      separator: this.separator
+    }
   }
 }
 </script>

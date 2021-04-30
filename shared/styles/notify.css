@@ -4,8 +4,12 @@
 }
 
 ._notify-content{
-    @apply flex-grow m-auto
-    text-sm
+    @apply flex-grow m-auto text-sm
+}
+
+._notify-content a{
+    @apply no-underline
+    hover:underline
 }
 
 ._notify-close {

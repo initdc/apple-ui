@@ -1,5 +1,5 @@
 ._button {
     @apply w-auto h-6 flex-shrink-0 px-3 my-auto bg-button-bg rounded-full
-    text-xs text-white
+    text-[12px] text-white
     hover:bg-button-hover
 }

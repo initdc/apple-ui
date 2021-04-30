@@ -3,15 +3,19 @@
     @apply w-full h-12 md:h-13 relative sticky top-0 bg-white bg-opacity-70
 }
 ._affix *{
-    @apply text-xs my-auto
+    @apply my-auto text-[12px]
+}
+
+._affix-line{
+    @apply h-1
 }
 
 ._affix-title{
-    @apply text-lg font-bold
+    @apply text-[21px] font-weight-600 text-affix-title
 }
 
 ._affix-subtitle{
-    @apply ml-2 text-lg text-subtitle
+    @apply ml-2 text-[21px] font-weight-400 text-subtitle
 }
 
 ._affix ul{

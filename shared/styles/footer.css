@@ -1,0 +1,29 @@
+._footer{
+    @apply w-full bg-footer-bg
+}
+
+._footer ._inner{
+    @apply flex-col py-2
+}
+
+._footer *{
+    @apply text-[12px] text-footer-text
+}
+
+._footer ol{
+    @apply list-decimal pl-4
+}
+
+._footer ul, ._footer ol {
+    @apply mb-3
+}
+
+._footer li {
+    @apply mb-1
+}
+
+._footer hr {
+    @apply my-3
+}
+
+

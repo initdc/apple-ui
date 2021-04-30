@@ -6,7 +6,7 @@
       <span class="flex-grow"></span>
       <slot></slot>
     </div>
-    <ap-break></ap-break>
+    <ap-break class="_affix-line"></ap-break>
   </nav>
 </template>
 
