@@ -1,6 +1,6 @@
 const colors = require('tailwindcss/colors')
-const apple = require('./shared/colors/colors.ts')
-const opacity = require('./shared/colors/opacity.ts')
+// const apple = require('./shared/colors/colors.ts')
+// const opacity = require('./shared/colors/opacity.ts')
 
 module.exports = {
   mode: 'jit',
@@ -12,6 +12,9 @@ module.exports = {
     './website/**/*.{vue,js,ts,jsx,tsx}'
   ],
   darkMode: false, // or 'media' or 'class'
+  presets: [
+    require('./shared/tailwind-preset.ts')
+  ],
   theme: {
     extend: {
       colors: {
@@ -42,28 +45,28 @@ module.exports = {
         pink: colors.pink,
         rose: colors.rose,
 
-        text: apple.text,
-        link: apple.link,
-        hr: apple.hr,
-        note: apple.note,
-        title: apple.title,
-        subtitle: apple.subtitle,
-        head: apple.head,
-        notify: apple.notify,
-        recycle: apple.recycle,
-        nav: apple.nav,
-        affix: apple.affix,
-        banner: apple.banner,
-        button: apple.button,
-        card: apple.card,
-        privacy: apple.privacy,
-        rate: apple.rate,
-        footer: apple.footer,
+        // text: apple.text,
+        // link: apple.link,
+        // hr: apple.hr,
+        // note: apple.note,
+        // title: apple.title,
+        // subtitle: apple.subtitle,
+        // head: apple.head,
+        // notify: apple.notify,
+        // recycle: apple.recycle,
+        // nav: apple.nav,
+        // affix: apple.affix,
+        // banner: apple.banner,
+        // button: apple.button,
+        // card: apple.card,
+        // privacy: apple.privacy,
+        // rate: apple.rate,
+        // footer: apple.footer,
       },
-      opacity: {
-        nav: opacity.nav,
-        affix: opacity.affix
-      },
+      // opacity: {
+      //   nav: opacity.nav,
+      //   affix: opacity.affix
+      // },
       minWidth: {
         '0': '0',
         '1/4': '25%',
@@ -99,17 +102,17 @@ module.exports = {
         '3xs': '.5 rem',
         '2xs': '.625 rem',
       },
-      fontWeight: {
-        'weight-100': 100,
-        'weight-200': 200,
-        'weight-300': 300,
-        'weight-400': 400,
-        'weight-500': 500,
-        'weight-600': 600,
-        'weight-700': 700,
-        'weight-800': 800,
-        'weight-900': 900,
-      },
+      // fontWeight: {
+      //   'weight-100': 100,
+      //   'weight-200': 200,
+      //   'weight-300': 300,
+      //   'weight-400': 400,
+      //   'weight-500': 500,
+      //   'weight-600': 600,
+      //   'weight-700': 700,
+      //   'weight-800': 800,
+      //   'weight-900': 900,
+      // },
       boxShadow: {
         'inner-sm': 'inset 0 1px 2px 0 rgba(0, 0, 0, 0.05)',
         'inner-md': 'inset 0 4px 6px -1px rgba(0, 0, 0, 0.1), inset 0 2px 4px -1px rgba(0, 0, 0, 0.06)',

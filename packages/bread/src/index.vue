@@ -1,6 +1,6 @@
 <template>
   <div class="_bread">
-    <slot><span class="icon material-icons">home</span></slot>
+    <slot><span class="icon material-icons _bread-item">home</span></slot>
   </div>
 </template>
 
