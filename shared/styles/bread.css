@@ -1,5 +1,5 @@
 ._bread{
-    @apply text-[12px] text-footer-title
+    @apply text-px-12 text-footer-title
 }
 
 ._bread ._bread-item{

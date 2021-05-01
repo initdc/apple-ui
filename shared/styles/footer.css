@@ -7,7 +7,7 @@
 }
 
 ._footer *{
-    @apply text-[12px] text-footer-text
+    @apply text-px-12 text-footer-text
 }
 
 ._footer ol{

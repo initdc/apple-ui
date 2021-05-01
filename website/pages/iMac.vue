@@ -209,4 +209,5 @@ export default {
 .copyright {
   @apply mr-1
 }
+
 </style>
