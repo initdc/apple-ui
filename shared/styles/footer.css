@@ -1,5 +1,5 @@
 ._footer{
-    @apply w-full bg-footer-bg
+    @apply w-full bg-footer-bg text-footer-text
 }
 
 ._footer ._inner{
@@ -7,7 +7,7 @@
 }
 
 ._footer *{
-    @apply text-px-12 text-footer-text
+    @apply text-px-12
 }
 
 ._footer ol{

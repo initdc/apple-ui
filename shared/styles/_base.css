@@ -7,7 +7,7 @@ button:focus{
 }
 
 ._inner{
-    @apply w-auto max-w-screen-lg h-full flex mx-auto px-3
+    @apply w-auto max-w-screen-lg h-full mx-auto px-3
 }
 
 .icon{

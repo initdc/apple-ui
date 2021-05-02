@@ -25,8 +25,14 @@ module.exports = {
         footer: apple.footer,
       },
       opacity: {
-        nav: opacity.nav,
-        affix: opacity.affix
+        'nav-bg': opacity.nav.bg,
+        'nav-text': opacity.nav.text,
+        'nav-cur': opacity.nav.current,
+        'nav-link': opacity.nav.link,
+        'affix-bg': opacity.affix.bg,
+        'affix-text': opacity.affix.text,
+        'affix-cur': opacity.affix.current,
+        'affix-link': opacity.affix.link
       },
       fontSize: {
         'px-0': '0rem',

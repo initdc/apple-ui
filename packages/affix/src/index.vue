@@ -1,12 +1,12 @@
 <template>
   <nav class="_affix">
     <div class="_inner">
-      <h1 v-if="title"><a :href="link" class="_affix-title">{{ title }}</a></h1>
+      <h1 v-if="title" class="_affix-title"><a :href="link">{{ title }}</a></h1>
       <span v-if="subtitle" class="_affix-subtitle">{{ subtitle }}</span>
       <span class="flex-grow"></span>
       <slot></slot>
     </div>
-    <ap-break class="_affix-line"></ap-break>
+    <ap-break/>
   </nav>
 </template>
 

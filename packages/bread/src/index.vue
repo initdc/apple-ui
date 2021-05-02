@@ -1,6 +1,7 @@
 <template>
   <div class="_bread">
-    <slot><span class="icon material-icons _bread-item">home</span></slot>
+    <a v-if="home" href="/" ><span class="icon material-icons _bread-home">home</span></a>
+    <slot></slot>
   </div>
 </template>
 
@@ -10,14 +11,20 @@ export default {
   name: "ApBread",
 
   props: {
+    home: {
+      type: Boolean,
+      default: false
+    },
     symbol: {
       type: String,
       default: '>'
     }
   },
   setup(props){
+    let home = props.home
     let separator = props.symbol
-    return { separator }
+
+    return { home, separator }
   },
   provide() {
     return {

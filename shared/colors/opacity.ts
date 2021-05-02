@@ -1,11 +1,14 @@
 module.exports = {
   nav: {
-    bg: '.8'
+    bg: '.8',
+    text: '.8',
+    current: '.56',
+    link: '1',
   },
   affix: {
-    bg: '.72',
-    title: '.88',
-    link: '.88',
-    text: '.56',
+    bg: '.9',
+    text: '.88',
+    current: '.56',
+    link: '1'
   }
 }

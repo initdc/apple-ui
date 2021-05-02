@@ -14,7 +14,12 @@ export default defineComponent({
     type: {
       type: String,
       default: 'button'
-    }
+    },
+    size: {
+      type: String,
+      default: 'sm'
+    },
+
   }
 })
 </script>

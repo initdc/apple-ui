@@ -1,10 +1,32 @@
 ._bread{
-    @apply text-px-12 text-footer-title
+    @apply flex flex-row text-px-12 font-weight-400
 }
 
-._bread ._bread-item{
-    @apply mx-1
+._bread > *{
+    @apply my-auto
 }
-._bread ul{
+
+._bread ._bread-home {
+    @apply text-px-20
+    hover:text-footer-title hover:no-underline
+}
+
+._bread ._bread-item {
+    @apply mr-2 my-auto text-footer-text
+}
+
+._bread ._bread-separator{
+    @apply mr-2 my-auto text-note
+}
+
+._bread ul, ol{
     @apply flex flex-row
+}
+
+._bread li{
+    @apply mr-1
+}
+
+._bread a{
+    @apply hover:underline
 }

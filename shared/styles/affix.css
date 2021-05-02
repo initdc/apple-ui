@@ -1,32 +1,49 @@
 ._affix {
-    backdrop-filter: blur(20px);
-    @apply w-full h-12 md:h-13 relative sticky top-0 bg-white bg-opacity-70
-}
-._affix *{
-    @apply my-auto text-px-12
-}
-
-._affix-line{
-    @apply h-1
+    @apply w-full h-12 md:h-13 sticky top-11 bg-white
+    backdrop-filter backdrop-blur-lg  backdrop-saturate-100
+    bg-opacity-70
+    text-px-12 font-weight-400
+    text-affix-text
 }
 
-._affix-title{
-    @apply text-px-21 font-weight-600 text-affix-title
+._affix > ._inner {
+    @apply flex flex-row
 }
 
-._affix-subtitle{
-    @apply ml-2 text-px-21 font-weight-400 text-subtitle
+._affix > ._inner > * {
+    @apply my-auto
 }
 
-._affix ul{
-    @apply flex flex-row mr-2
+._affix-title {
+    @apply flex-shrink-0
+    text-px-21 font-weight-600 text-affix-title
 }
 
-._affix li{
-    @apply mx-4 text-affix-text
+._affix-subtitle {
+    @apply flex-shrink-0 ml-2
+    text-px-21 font-weight-400 text-subtitle
 }
 
-._affix a{
+._affix > ._inner .cur, .cur * {
+    @apply text-nav-text text-opacity-nav-cur
+}
+
+._affix > ._inner > :not(._affix-title, ._affix-subtitle, ._button) {
+    @apply mr-3 inline-flex
+}
+
+._affix > ._inner > :not(._affix-title, ._affix-subtitle, ._button) > * {
+    @apply mr-4
+}
+
+._affix a[href] {
     @apply text-affix-link
 }
 
+._affix a[href]:hover {
+    @apply text-link-product
+}
+
+._affix ._affix-title a:hover {
+    @apply text-affix-title
+}

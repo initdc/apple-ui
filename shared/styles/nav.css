@@ -1,26 +1,40 @@
 ._nav {
-    backdrop-filter: saturate(180%) blur(20px);
-    @apply w-full h-12 md:h-11 bg-black opacity-80
-}
-
-._nav > * {
-    @apply text-px-12 font-weight-300
+    @apply w-full h-12 md:h-11 bg-black
+    backdrop-filter backdrop-blur-lg backdrop-saturate-100
+    bg-opacity-nav-bg
+    text-px-14 font-weight-400
     text-nav-text
-    hover:text-nav-hover
 }
 
-._nav-menu{
-    @apply md:hidden
+._nav > ._inner {
+    @apply flex flex-row
 }
-._nav-home{
-    @apply mx-auto md:ml-0
+
+._nav > ._inner > * {
+    @apply my-auto
+    text-nav-text hover:text-nav-hover
 }
-._nav-end{
-    @apply mr-0
+
+._nav ._nav-menu {
+    @apply ml-0 md:hidden
 }
-._nav ul {
-    @apply hidden md:flex px-3 my-auto flex-grow flex-row
+
+._nav ._nav-home {
+    @apply mx-auto md:ml-0 md:mr-3
 }
-._nav li {
-    @apply mx-auto my-auto
+
+._nav ._nav-end {
+    @apply ml-3 mr-0
+}
+
+._nav > ._inner .cur, .cur * {
+    @apply text-nav-text text-opacity-nav-cur
+}
+
+._nav > ._inner > :not(._nav-menu, ._nav-home, ._nav-end) {
+    @apply  hidden md:inline-flex flex-grow text-nav-text hover:text-nav-hover
+}
+
+._nav > ._inner > :not(._nav-menu, ._nav-home, ._nav-end) > *{
+    @apply mx-auto text-nav-text hover:text-nav-hover
 }

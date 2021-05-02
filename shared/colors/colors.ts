@@ -28,10 +28,10 @@ module.exports = {
     bgr: '#333',
     line: '#d6d6d6',
     title: '#000',
-    link: '#171717',
     hover: '#06f',
-    text: '#5d5d5d',
+    text: '#000',
     textr: '#ccc',
+    link: '#000',
   },
   banner: {
     bg: '#f2f8fc',
