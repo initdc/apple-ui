@@ -13,7 +13,7 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   presets: [
-    require('./shared/tailwind-preset.ts')
+    require('./shared/tailwind-preset')
   ],
   theme: {
     extend: {
@@ -54,7 +54,7 @@ module.exports = {
         // head: apple.head,
         // notify: apple.notify,
         // recycle: apple.recycle,
-        // nav: apple.nav,
+        // header: apple.header,
         // affix: apple.affix,
         // banner: apple.banner,
         // button: apple.button,
@@ -64,7 +64,7 @@ module.exports = {
         // footer: apple.footer,
       },
       // opacity: {
-      //   nav: opacity.nav,
+      //   header: opacity.header,
       //   affix: opacity.affix
       // },
       minWidth: {

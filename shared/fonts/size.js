@@ -1,5 +1,5 @@
 module.exports = {
-  px2rem: {
+  pr: {
     'px-0': '0 rem',
     'px-1': '0.125 rem',
     'px-2': '0.313 rem',

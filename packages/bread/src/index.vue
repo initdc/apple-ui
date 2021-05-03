@@ -1,15 +1,16 @@
 <template>
   <div class="_bread">
-    <a v-if="home" href="/" ><span class="icon material-icons _bread-home">home</span></a>
+    <a v-if="home" href="/" ><ApBreadItem class="icon material-icons _bread-home">home</ApBreadItem></a>
     <slot></slot>
   </div>
 </template>
 
 <script lang="ts">
 
+import ApBreadItem from "../../bread-item/src/index.vue";
 export default {
   name: "ApBread",
-
+  components: {ApBreadItem},
   props: {
     home: {
       type: Boolean,

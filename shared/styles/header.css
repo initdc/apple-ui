@@ -1,4 +1,4 @@
-._nav {
+._header {
     @apply w-full h-12 md:h-11 bg-black
     backdrop-filter backdrop-blur-lg backdrop-saturate-100
     bg-opacity-nav-bg
@@ -6,35 +6,35 @@
     text-nav-text
 }
 
-._nav > ._inner {
+._header > ._inner {
     @apply flex flex-row
 }
 
-._nav > ._inner > * {
+._header > ._inner > * {
     @apply my-auto
     text-nav-text hover:text-nav-hover
 }
 
-._nav ._nav-menu {
+._header ._header-menu {
     @apply ml-0 md:hidden
 }
 
-._nav ._nav-home {
+._header ._header-home {
     @apply mx-auto md:ml-0 md:mr-3
 }
 
-._nav ._nav-end {
+._header ._header-end {
     @apply ml-3 mr-0
 }
 
-._nav > ._inner .cur, .cur * {
+._header > ._inner .curr, ._header > ._inner .curr * {
     @apply text-nav-text text-opacity-nav-cur
 }
 
-._nav > ._inner > :not(._nav-menu, ._nav-home, ._nav-end) {
+._header > ._inner > :not(._header-menu, ._header-home, ._header-end) {
     @apply  hidden md:inline-flex flex-grow text-nav-text hover:text-nav-hover
 }
 
-._nav > ._inner > :not(._nav-menu, ._nav-home, ._nav-end) > *{
+._header > ._inner > :not(._header-menu, ._header-home, ._header-end) > *{
     @apply mx-auto text-nav-text hover:text-nav-hover
 }

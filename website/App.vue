@@ -17,7 +17,7 @@ export default defineComponent({
 #app {
   @apply static
 }
-/*.ap-nav{*/
+/*.ap-header{*/
 /*  @apply sticky top-0*/
 /*}*/
 /*.ap-affix{*/

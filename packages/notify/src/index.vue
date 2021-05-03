@@ -1,9 +1,7 @@
 <template>
   <div class="_notify" v-if="status">
     <div class="_inner">
-      <span class="_notify-content">
-        <slot></slot>
-      </span>
+      <slot></slot>
       <button class="_notify-close icon material-icons" @click="close">close</button>
     </div>
   </div>
@@ -22,9 +20,8 @@ export default {
     }
   },
   setup(props) {
-
     let ntf = localStorage.getItem('notify')
-    if (ntf === 'false'){
+    if (ntf === 'false') {
       let status = ref(false)
       return {status}
     }
@@ -33,7 +30,7 @@ export default {
     return {status}
   },
   methods: {
-    close(){
+    close() {
       this.status = false
       localStorage.setItem('notify', 'false')
     }

@@ -7,13 +7,13 @@ button:focus{
 }
 
 ._inner{
-    @apply w-auto max-w-screen-lg h-full mx-auto px-3
+    @apply w-auto max-w-screen-lg h-full mx-auto px-4 md:px-6
 }
 
 .icon{
     @apply flex-shrink-0 my-auto
 }
 
-.note li, p.note, span.note {
+.note {
     @apply text-note
 }

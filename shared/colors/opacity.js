@@ -6,7 +6,7 @@ module.exports = {
     link: '1',
   },
   affix: {
-    bg: '.9',
+    bg: '.7',
     text: '.88',
     current: '.56',
     link: '1'

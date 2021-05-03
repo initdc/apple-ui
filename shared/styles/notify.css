@@ -1,17 +1,30 @@
 ._notify {
     @apply w-full h-11 bg-notify-bg
-    text-notify-text text-center
+    text-notify-text
+    text-px-14
 }
 
-._notify-content{
-    @apply flex-grow m-auto text-sm
+._notify > ._inner {
+    @apply flex flex-row
 }
 
-._notify-content a{
+._notify > ._inner > * {
+    @apply my-auto
+}
+
+._notify > ._inner > :not(._notify-close) {
+    @apply flex-grow px-3 inline-block text-center
+}
+
+._notify > ._inner > :not(._notify-close) *{
+    @apply inline-block
+}
+
+._notify a{
     @apply no-underline
     hover:underline
 }
 
 ._notify-close {
-    @apply flex-shrink-0 mr-0
+    @apply mr-0
 }

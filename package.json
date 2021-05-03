@@ -2,7 +2,7 @@
   "name": "apple-ui",
   "version": "0.0.0",
   "description": "An ui kit with many components looks like apple.com website.",
-  "main": "dist/index.js",
+  "main": "packages/index.ts",
   "scripts": {
     "build:css": "sh ./scripts/build-css.sh",
     "build:package": "sh ./scripts/build-package.sh",
@@ -43,5 +43,8 @@
   },
   "dependencies": {
     "vue": "^3.0.11"
+  },
+  "directories": {
+    "doc": "docs"
   }
 }

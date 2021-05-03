@@ -1,5 +1,5 @@
-const apple = require('./colors/colors.ts')
-const opacity = require('./colors/opacity.ts')
+const apple = require('./colors/colors')
+const opacity = require('./colors/opacity')
 
 module.exports = {
   // mode: 'jit',
@@ -12,7 +12,6 @@ module.exports = {
         note: apple.note,
         title: apple.title,
         subtitle: apple.subtitle,
-        head: apple.head,
         notify: apple.notify,
         recycle: apple.recycle,
         nav: apple.nav,

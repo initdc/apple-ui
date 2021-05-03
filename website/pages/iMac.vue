@@ -1,7 +1,7 @@
 <template>
-  <Nav class="sticky top-0">
+  <Header>
     <ul>
-      <li class="cur"><a href="/">Mac</a></li>
+      <li class="curr"><a href="/">Mac</a></li>
       <li><a href="/">iPad</a></li>
       <li><a href="/">iPhone</a></li>
       <li><a href="/">Watch</a></li>
@@ -11,12 +11,12 @@
         <a href="/">search</a>
       </li>
     </ul>
-  </Nav>
+  </Header>
   <Affix title='iMac 24"' subtitle="Preview" link="/">
-<!--    <ul>-->
-      <li><a>Overview</a></li>
+    <ul>
+      <li class="curr"><a>Overview</a></li>
       <li><a href="/">Tech Specs</a></li>
-<!--    </ul>-->
+    </ul>
     <Button>Order</Button>
   </Affix>
   <notify>
@@ -30,7 +30,7 @@
   </div>
   <Button></Button>
   <bread/>
-  <bread>
+  <bread home>
     <bread-item>a</bread-item>
     <bread-item>b</bread-item>
     <bread-item>
@@ -40,7 +40,7 @@
         <li>c3</li>
       </ul>
     </bread-item>
-    <li class="material-icons icon">
+    <li class="material-icons">
       <button>search</button>
     </li>
     <bread-item><span>d</span>
@@ -52,7 +52,7 @@
   </bread>
   <Footer>
     <break></break>
-    <ol class="note">
+    <ol>
       <li>The Croods: A New Age © 2021 DreamWorks Animation LLC. All rights reserved.</li>
       <li>Actual diagonal screen size is 23.5 inches.</li>
       <li>Compared with 21.5-inch iMac.</li>
@@ -66,17 +66,19 @@
       <li> Magic Keyboard with Touch ID is included with the 24‑inch iMac systems with Apple M1 chip and 8‑core GPU and
         is available as an option on systems with 7‑core GPU.
       </li>
-      <li> Trade-in values vary based on the condition, year, and configuration of your trade-in device, and may also
-        vary between online and in-store trade-in. You must be at least 18 years old. Apple or its trade-in partners
-        reserve the right to refuse or limit any trade-in transaction for any reason. In-store trade-in requires
-        presentation of a valid, government-issued photo ID (local law may require saving this information). Additional
-        terms from Apple or Apple’s trade-in partners may apply.
-        <br>
-        <br>
-        Software and content may be sold separately. Title availability is subject to change.
+      <li>
+        <p>
+          Trade-in values vary based on the condition, year, and configuration of your trade-in device, and may also
+          vary between online and in-store trade-in. You must be at least 18 years old. Apple or its trade-in partners
+          reserve the right to refuse or limit any trade-in transaction for any reason. In-store trade-in requires
+          presentation of a valid, government-issued photo ID (local law may require saving this information).
+          Additional
+          terms from Apple or Apple’s trade-in partners may apply.
+        </p>
+        <p>Software and content may be sold separately. Title availability is subject to change.</p>
       </li>
     </ol>
-    <p class="note">
+    <p>
       † Apple Card Monthly Installments is available for certain Apple products and is subject to credit approval and
       credit limit. See https://support.apple.com/kb/HT211204 for more information about eligible products. iPhone
       activation required on iPhone purchases made at an Apple Store with one of these national carriers: AT&T, Sprint,
@@ -91,103 +93,132 @@
     </p>
     <break></break>
     <bread home>
-      <ul class="flex">
-        <bread-item><span class="icon material-icons text-px-20">home</span></bread-item>
+      <u>
         <bread-item><a href="/">Mac</a></bread-item>
         <bread-item><a href="/">iMac</a></bread-item>
         <bread-item end>iMac 24"</bread-item>
-      </ul>
+      </u>
     </bread>
-    <div class="flex flex-row footer-list">
-      <ul class="first">
-        <li><strong>Shop and Learn</strong></li>
-        <li><a href="/">Mac</a></li>
-        <li><a href="/">iPhone</a></li>
-        <li><a href="/">iPad</a></li>
-        <li><a href="/">Watch</a></li>
-        <li><a href="/">TV</a></li>
-        <li><a href="/">AirPods</a></li>
-        <li><a href="/">HomePod</a></li>
-        <li><a href="/">iPod Touch</a></li>
-        <li><a href="/">Accessories</a></li>
-        <li><a href="/">Gift Cards</a></li>
-      </ul>
+    <nav>
       <ul>
         <li><strong>Shop and Learn</strong></li>
         <li><a href="/">Mac</a></li>
-        <li><a href="/">iPhone</a></li>
         <li><a href="/">iPad</a></li>
+        <li><a href="/">iPhone</a></li>
         <li><a href="/">Watch</a></li>
         <li><a href="/">TV</a></li>
+        <li><a href="/">Music</a></li>
         <li><a href="/">AirPods</a></li>
         <li><a href="/">HomePod</a></li>
-        <li><a href="/">iPod Touch</a></li>
+        <li><a href="/">iPod touch</a></li>
+        <li><a href="/">AirTag</a></li>
         <li><a href="/">Accessories</a></li>
         <li><a href="/">Gift Cards</a></li>
       </ul>
-      <ul>
-        <li><strong>Shop and Learn</strong></li>
-        <li><a href="/">Mac</a></li>
-        <li><a href="/">iPhone</a></li>
-        <li><a href="/">iPad</a></li>
-        <li><a href="/">Watch</a></li>
-        <li><a href="/">TV</a></li>
-        <li><a href="/">AirPods</a></li>
-        <li><a href="/">HomePod</a></li>
-        <li><a href="/">iPod Touch</a></li>
-        <li><a href="/">Accessories</a></li>
-        <li><a href="/">Gift Cards</a></li>
-      </ul>
+
       <ul>
         <ul>
-          <li><strong>Shop and Learn</strong></li>
-          <li><a href="/">Mac</a></li>
-          <li><a href="/">iPhone</a></li>
-          <li><a href="/">iPad</a></li>
-          <li><a href="/">Watch</a></li>
-          <li><a href="/">TV</a></li>
-          <li><a href="/">AirPods</a></li>
-          <li><a href="/">HomePod</a></li>
-          <li><a href="/">iPod Touch</a></li>
-          <li><a href="/">Accessories</a></li>
-          <li><a href="/">Gift Cards</a></li>
+          <li><strong>Services</strong></li>
+          <li><a href="/">Apple Music</a></li>
+          <li><a href="/">Apple TV+</a></li>
+          <li><a href="/">Apple Fitness+</a></li>
+          <li><a href="/">Apple News+</a></li>
+          <li><a href="/">Apple Arcade</a></li>
+          <li><a href="/">iCloud</a></li>
+          <li><a href="/">Apple One</a></li>
+          <li><a href="/">Apple Card</a></li>
+          <li><a href="/">Apple Books</a></li>
+          <li><a href="/">App Store</a></li>
+        </ul>
+
+        <ul>
+          <li><strong>Account</strong></li>
+          <li><a href="/">Manage Your Apple ID</a></li>
+          <li><a href="/">Apple Store Account</a></li>
+          <li><a href="/">iCloud.com</a></li>
+        </ul>
+      </ul>
+
+      <ul>
+        <li><strong>Apple Store</strong></li>
+        <li><a href="/">Find a Store</a></li>
+        <li><a href="/">Shop Online</a></li>
+        <li><a href="/">Genius Bar</a></li>
+        <li><a href="/">Today at Apple</a></li>
+        <li><a href="/">Apple Camp</a></li>
+        <li><a href="/">Apple Store App</a></li>
+        <li><a href="/">Refurbished and Clearance</a></li>
+        <li><a href="/">Financing</a></li>
+        <li><a href="/">Apple Trade In</a></li>
+        <li><a href="/">Order Status</a></li>
+        <li><a href="/">Shopping Help</a></li>
+      </ul>
+
+      <ul>
+        <ul>
+          <li><strong>For Business</strong></li>
+          <li><a href="/">Apple and Business</a></li>
+          <li><a href="/">Shop for Business</a></li>
+        </ul>
+
+        <ul>
+          <li><strong>For Education</strong></li>
+          <li><a href="/">Apple and Education</a></li>
+          <li><a href="/">Shop for K-12</a></li>
+          <li><a href="/">Shop for College</a></li>
+        </ul>
+
+        <ul>
+          <li><strong>For Healthcare</strong></li>
+          <li><a href="/">Apple in Healthcare</a></li>
+          <li><a href="/">Health on Apple Watch</a></li>
+          <li><a href="/">Health Records on iPhone</a></li>
         </ul>
         <ul>
-          <li><strong>Shop and Learn</strong></li>
-          <li><a href="/">AirPods</a></li>
-          <li><a href="/">HomePod</a></li>
-          <li><a href="/">iPod Touch</a></li>
-          <li><a href="/">Accessories</a></li>
-          <li><a href="/">Gift Cards</a></li>
+
+          <li><strong>For Government</strong></li>
+          <li><a href="/">Shop for Government</a></li>
+          <li><a href="/">Shop for Veterans and Military</a></li>
         </ul>
       </ul>
-      <ul class="last">
-        <li><strong>Shop and Learn</strong></li>
-        <li><a href="/">Mac</a></li>
-        <li><a href="/">iPhone</a></li>
-        <li><a href="/">iPad</a></li>
-        <li><a href="/">Watch</a></li>
-        <li><a href="/">TV</a></li>
-        <li><a href="/">AirPods</a></li>
-        <li><a href="/">HomePod</a></li>
-        <li><a href="/">iPod Touch</a></li>
-        <li><a href="/">Accessories</a></li>
-        <li><a href="/">Gift Cards</a></li>
+
+      <ul>
+        <ul>
+          <li><strong>Apple Values</strong></li>
+          <li><a href="/">Accessibility</a></li>
+          <li><a href="/">Education</a></li>
+          <li><a href="/">Environment</a></li>
+          <li><a href="/">Inclusion and Diversity</a></li>
+          <li><a href="/">Privacy</a></li>
+          <li><a href="/">Racial Equity and Justice</a></li>
+          <li><a href="/">Supplier Responsibility</a></li>
+        </ul>
+
+        <ul>
+          <li><strong>About Apple</strong></li>
+          <li><a href="/">Newsroom</a></li>
+          <li><a href="/">Apple Leadership</a></li>
+          <li><a href="/">Career Opportunities</a></li>
+          <li><a href="/">Investors</a></li>
+          <li><a href="/">Ethics & Compliance</a></li>
+          <li><a href="/">Events</a></li>
+          <li><a href="/">Contact Apple</a></li>
+        </ul>
       </ul>
-    </div>
-    <p class="note">More ways to shop: Find an Apple Store or other retailer near you. Or call 1-800-MY-APPLE.</p>
-    <break class="last"/>
-    <div class="flex flex-row copyright mb-2">
-      <span class="note">Copyright © 2021 Apple Inc. All rights reserved.</span>
-      <bread symbol="|" class="flex flex-row ml-4">
+    </nav>
+    <p>More ways to shop: Find an Apple Store or other retailer near you. Or call 1-800-MY-APPLE.</p>
+    <break/>
+    <div>
+      <span>Copyright © 2021 Apple Inc. All rights reserved.</span>
+      <bread symbol="|">
         <bread-item><a href="/">Privacy Policy</a></bread-item>
         <bread-item><a href="/">Terms of Use</a></bread-item>
         <bread-item><a href="/">Sales and Refunds</a></bread-item>
         <bread-item><a href="/">Legal</a></bread-item>
         <bread-item end><a href="/">Site Map</a></bread-item>
       </bread>
-      <span class="flex-grow"></span>
-      <span class="address">
+      <span></span>
+      <span>
         United States
       </span>
     </div>
@@ -196,7 +227,7 @@
 
 <script>
 import Button from '/@/packages/button'
-import Nav from '/@/packages/nav'
+import Header from '/@/packages/header'
 import Affix from '/@/packages/affix'
 import Notify from '/@/packages/notify'
 import Break from '/@/packages/break'
@@ -209,7 +240,7 @@ export default {
 
   components: {
     Button,
-    Nav,
+    Header,
     Affix,
     Notify,
     Break,
@@ -220,30 +251,5 @@ export default {
 }
 </script>
 
-<style >
-
-/*.footer-list ul {*/
-/*  @apply mx-auto*/
-/*}*/
-
-/*.footer-list .first {*/
-/*  @apply ml-0*/
-/*}*/
-
-/*.footer-list .last {*/
-/*  @apply mr-0*/
-/*}*/
-
-/*.address {*/
-/*  @apply mr-0*/
-/*}*/
-
-/*._footer .last {*/
-/*  @apply my-1*/
-/*}*/
-
-/*.copyright {*/
-/*  @apply mr-1*/
-/*}*/
-
+<style>
 </style>

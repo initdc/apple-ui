@@ -1,18 +1,19 @@
 module.exports = {
   text: '#1d1d1f',
   link: {
-    index: '#06f',
+    index: '#06c',
     product: '#0070c9'
   },
-  hr: '#d6d6d6',
+  hr: '#d2d2d7',
   title: '#1d1d1f',
   subtitle: '#636363',
-  head: '#111',
   notify: {
     bg: '#0071E3',
     text: '#fff'
   },
   recycle: {
+    head: '#111',
+    p: '#333',
     bg: '#f6f6ee',
     text: '#03a10e'
   },

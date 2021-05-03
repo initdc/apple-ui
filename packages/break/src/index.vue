@@ -1,5 +1,5 @@
 <template>
-  <hr class="_break">
+  <div class="_break"/>
 </template>
 
 <script lang="ts">
