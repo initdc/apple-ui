@@ -1,5 +1,5 @@
 ._bread-item {
-    @apply mr-2
+    @apply mr-2 inline-block
 }
 
 ._bread-separator{

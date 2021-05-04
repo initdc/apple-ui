@@ -29,7 +29,7 @@
 }
 
 ._affix > ._inner .curr, ._affix > ._inner .curr *{
-    @apply text-black text-opacity-nav-cur
+    @apply text-black text-opacity-affix-cur
 }
 
 ._affix > ._inner > :not(._affix-title, ._affix-subtitle, ._button) {

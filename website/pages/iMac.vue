@@ -77,7 +77,7 @@
       by Goldman Sachs Bank USA, Salt Lake City Branch.
     </p>
     <break></break>
-    <bread home>
+    <bread home class="mt-1 mb-4">
       <bread-item><a href="/">Mac</a></bread-item>
       <bread-item><a href="/">iMac</a></bread-item>
       <bread-item>iMac 24"</bread-item>
@@ -192,7 +192,7 @@
     <p class="text-note">More ways to shop: <a>Find an Apple Store</a> or <a>other retailer</a> near you. Or call
       1-800-MY-APPLE.</p>
     <break/>
-    <div class="flex">
+    <div class="flex-shrink-0">
       <span class="text-note">Copyright © 2021 Apple Inc. All rights reserved.</span>
       <bread symbol="|">
         <bread-item><a href="/">Privacy Policy</a></bread-item>

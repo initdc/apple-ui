@@ -1,5 +1,5 @@
 module.exports = {
-  nav: {
+  header: {
     bg: '.8',
     text: '.8',
     current: '.56',

@@ -17,12 +17,13 @@ module.exports = {
     bg: '#f6f6ee',
     text: '#03a10e'
   },
-  nav: {
+  header: {
     bg: '#1d1d1f',
     bgr: '#f0f0f0',
     text: '#d5d5d5',
     textr: '#1d1d1f',
     hover: '#fff',
+    hoverr: '#000'
   },
   affix: {
     bg: '#fff',

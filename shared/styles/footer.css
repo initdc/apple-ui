@@ -44,11 +44,11 @@
     hover:underline hover:text-footer-title
 }
 
-._footer ._inner > p > a {
+._footer ._inner > :not(._bread , nav , .note) > a {
     @apply no-underline text-link-product
     hover:underline hover:text-link-product
 }
 
-._footer ._inner :not(._bread , .nav, .note) > span {
+._footer ._inner > :not(._bread , nav , .note) > span {
     @apply mr-2
 }
