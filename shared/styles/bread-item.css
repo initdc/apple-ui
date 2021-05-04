@@ -1,3 +1,7 @@
-._bread-item *{
-    @apply my-auto
+._bread-item {
+    @apply mr-2
+}
+
+._bread-separator{
+    @apply mr-2 text-note
 }

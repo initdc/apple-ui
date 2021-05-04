@@ -9,7 +9,7 @@
 <script lang="ts">
 
 export default {
-  name: "ApBlank",
+  name: "ApFooter",
 
   props: {
     status: {

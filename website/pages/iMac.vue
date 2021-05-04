@@ -31,29 +31,14 @@
   <Button></Button>
   <bread/>
   <bread home>
-    <bread-item>a</bread-item>
-    <bread-item>b</bread-item>
-    <bread-item>
-      <ul>
-        <a>c1</a>
-        <li>c2</li>
-        <li>c3</li>
-      </ul>
-    </bread-item>
-    <li class="material-icons">
-      <button>search</button>
-    </li>
-    <bread-item><span>d</span>
-      <li class="material-icons">
-        <button>search</button>
-      </li>
-      <button>search</button>
-    </bread-item>
+    <bread-item><a href="/">a</a></bread-item>
+    <bread-item><a href="/">b</a></bread-item>
+    <bread-item></bread-item>
   </bread>
   <Footer>
     <break></break>
-    <ol>
-      <li>The Croods: A New Age © 2021 DreamWorks Animation LLC. All rights reserved.</li>
+    <ol class="flex flex-col note">
+      <li><a><i>The Croods: A New Age</i></a> <span>© 2021 DreamWorks Animation LLC. All rights reserved.</span></li>
       <li>Actual diagonal screen size is 23.5 inches.</li>
       <li>Compared with 21.5-inch iMac.</li>
       <li> Testing conducted by Apple in March 2021 using preproduction 24-inch iMac systems with Apple M1 chip and
@@ -78,7 +63,7 @@
         <p>Software and content may be sold separately. Title availability is subject to change.</p>
       </li>
     </ol>
-    <p>
+    <p class="note">
       † Apple Card Monthly Installments is available for certain Apple products and is subject to credit approval and
       credit limit. See https://support.apple.com/kb/HT211204 for more information about eligible products. iPhone
       activation required on iPhone purchases made at an Apple Store with one of these national carriers: AT&T, Sprint,
@@ -93,13 +78,11 @@
     </p>
     <break></break>
     <bread home>
-      <u>
-        <bread-item><a href="/">Mac</a></bread-item>
-        <bread-item><a href="/">iMac</a></bread-item>
-        <bread-item end>iMac 24"</bread-item>
-      </u>
+      <bread-item><a href="/">Mac</a></bread-item>
+      <bread-item><a href="/">iMac</a></bread-item>
+      <bread-item>iMac 24"</bread-item>
     </bread>
-    <nav>
+    <nav class="flex flex-row">
       <ul>
         <li><strong>Shop and Learn</strong></li>
         <li><a href="/">Mac</a></li>
@@ -206,10 +189,11 @@
         </ul>
       </ul>
     </nav>
-    <p>More ways to shop: Find an Apple Store or other retailer near you. Or call 1-800-MY-APPLE.</p>
+    <p class="text-note">More ways to shop: <a>Find an Apple Store</a> or <a>other retailer</a> near you. Or call
+      1-800-MY-APPLE.</p>
     <break/>
-    <div>
-      <span>Copyright © 2021 Apple Inc. All rights reserved.</span>
+    <div class="flex">
+      <span class="text-note">Copyright © 2021 Apple Inc. All rights reserved.</span>
       <bread symbol="|">
         <bread-item><a href="/">Privacy Policy</a></bread-item>
         <bread-item><a href="/">Terms of Use</a></bread-item>
@@ -217,9 +201,11 @@
         <bread-item><a href="/">Legal</a></bread-item>
         <bread-item end><a href="/">Site Map</a></bread-item>
       </bread>
-      <span></span>
+      <span class="flex-grow"></span>
       <span>
+        <a>
         United States
+        </a>
       </span>
     </div>
   </Footer>

@@ -1,32 +1,22 @@
 ._bread{
-    @apply flex flex-row text-px-12 font-weight-400
+    @apply inline-flex flex-shrink-0
+    text-px-12 font-weight-400
+    text-footer-text
 }
 
 ._bread > *{
     @apply my-auto
 }
 
-._bread ._bread-home {
-    @apply text-px-20
-    hover:text-footer-title hover:no-underline
+._bread ._bread-item a{
+    @apply no-underline
+    hover:underline hover:text-footer-title
 }
 
-._bread ._bread-item {
-    @apply mr-2 my-auto text-footer-text
+._bread ._bread-item ._bread-home {
+    @apply text-px-20 no-underline hover:no-underline
 }
 
-._bread ._bread-separator{
-    @apply mr-2 my-auto text-note
-}
-
-._bread ul, ol{
-    @apply flex flex-row
-}
-
-._bread li{
-    @apply mr-1
-}
-
-._bread a{
-    @apply hover:underline
+._bread ._bread-separator:last-child {
+    @apply hidden
 }

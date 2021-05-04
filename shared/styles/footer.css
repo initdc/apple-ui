@@ -1,29 +1,54 @@
-._footer{
-    @apply w-full bg-footer-bg text-footer-text
+._footer {
+    @apply w-full bg-footer-bg
+    text-px-12 font-weight-400 text-footer-text
 }
 
-._footer ._inner{
-    @apply flex-col py-2
-}
-
-._footer *{
-    @apply text-px-12
-}
-
-._footer ol{
-    @apply list-decimal pl-4
+._footer ._inner {
+    @apply flex flex-col py-4
 }
 
 ._footer ul, ._footer ol {
-    @apply mb-3
+    @apply mb-3 mx-auto
+}
+
+._footer ol {
+    @apply list-decimal pl-4
 }
 
 ._footer li {
-    @apply mb-1
+    @apply mb-2
 }
 
-._footer hr {
-    @apply my-3
+._footer li > p {
+    @apply mb-2
 }
 
+._footer nav > ul > *, ._footer nav > ol > *{
+    @apply flex flex-col
+}
 
+._footer ul:first-child, ._footer ol:first-child {
+    @apply ml-0
+}
+
+._footer ul:last-child, ._footer ol:last-child {
+    @apply mr-0
+}
+
+._footer ._break {
+    @apply my-2
+}
+
+._footer ._inner a {
+    @apply no-underline text-footer-text
+    hover:underline hover:text-footer-title
+}
+
+._footer ._inner > p > a {
+    @apply no-underline text-link-product
+    hover:underline hover:text-link-product
+}
+
+._footer ._inner :not(._bread , .nav, .note) > span {
+    @apply mr-2
+}

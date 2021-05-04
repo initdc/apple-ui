@@ -1,10 +1,10 @@
 @import "tailwindcss/components";
 
-@import "./affix.css";
-@import "./button.css";
+@import "affix.css";
+@import "button.css";
 @import "header.css";
-@import "./notify.css";
-@import "./break.css";
-@import "./bread.css";
-@import "./bread-item.css";
-@import "./footer.css";
+@import "notify.css";
+@import "break.css";
+@import "bread.css";
+@import "bread-item.css";
+@import "footer.css";

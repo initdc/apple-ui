@@ -11,7 +11,7 @@ button:focus{
 }
 
 .icon{
-    @apply flex-shrink-0 my-auto
+    @apply flex-shrink-0
 }
 
 .note {

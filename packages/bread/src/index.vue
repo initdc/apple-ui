@@ -1,15 +1,16 @@
 <template>
   <div class="_bread">
-    <a v-if="home" href="/" ><ApBreadItem class="icon material-icons _bread-home">home</ApBreadItem></a>
+    <ApBreadItem v-if="home"><a href="/" class="icon material-icons _bread-home">home</a></ApBreadItem>
     <slot></slot>
   </div>
 </template>
 
 <script lang="ts">
-
 import ApBreadItem from "../../bread-item/src/index.vue";
+
 export default {
   name: "ApBread",
+
   components: {ApBreadItem},
   props: {
     home: {
@@ -21,11 +22,11 @@ export default {
       default: '>'
     }
   },
-  setup(props){
+  setup(props) {
     let home = props.home
     let separator = props.symbol
 
-    return { home, separator }
+    return {home, separator}
   },
   provide() {
     return {
