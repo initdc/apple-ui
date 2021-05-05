@@ -5,8 +5,9 @@
 </template>
 
 <script lang="ts">
+import { defineComponent } from 'vue'
 
-export default {
+export default defineComponent({
   name: "ApBlank",
 
   props: {
@@ -17,9 +18,5 @@ export default {
   },
   setup(props) {
   }
-}
+})
 </script>
-
-<style scoped>
-
-</style>

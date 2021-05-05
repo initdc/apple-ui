@@ -6,9 +6,10 @@
 </template>
 
 <script lang="ts">
+import { defineComponent } from 'vue'
 import ApBreadItem from "../../bread-item/src/index.vue";
 
-export default {
+export default defineComponent({
   name: "ApBread",
 
   components: {ApBreadItem},
@@ -33,9 +34,5 @@ export default {
       separator: this.separator
     }
   }
-}
+})
 </script>
-
-<style scoped>
-
-</style>

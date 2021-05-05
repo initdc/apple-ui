@@ -10,9 +10,11 @@
   </nav>
 </template>
 
-<script>
+<script lang="ts">
+import { defineComponent } from 'vue'
 import ApBreak from "../../break";
-export default {
+
+export default defineComponent({
   name: "ApAffix",
   components: {ApBreak},
   props: {
@@ -40,9 +42,5 @@ export default {
       link
     }
   }
-}
+})
 </script>
-
-<style scoped>
-
-</style>

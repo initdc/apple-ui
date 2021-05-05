@@ -1,16 +1,14 @@
 <template>
-  <footer class="_footer">
-    <div class="_inner">
-      <slot></slot>
-    </div>
-  </footer>
+  <teleport class="_drawer" to="body">
+
+  </teleport>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: "ApFooter",
+  name: "ApDrawer",
 
   props: {
     status: {

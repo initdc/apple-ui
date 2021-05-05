@@ -6,8 +6,9 @@
 </template>
 
 <script lang="ts">
+import { defineComponent } from 'vue'
 
-export default {
+export default defineComponent({
   name: "ApBreadItem",
 
   inject: ['separator'],
@@ -17,9 +18,5 @@ export default {
   setup(props) {
 
   }
-}
+})
 </script>
-
-<style scoped>
-
-</style>

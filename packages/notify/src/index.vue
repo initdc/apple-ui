@@ -8,9 +8,9 @@
 </template>
 
 <script lang="ts">
-import {ref} from 'vue'
+import {defineComponent, ref} from 'vue'
 
-export default {
+export default defineComponent({
   name: "ApNotify",
 
   props: {
@@ -35,9 +35,5 @@ export default {
       localStorage.setItem('notify', 'false')
     }
   }
-}
+})
 </script>
-
-<style scoped>
-
-</style>
