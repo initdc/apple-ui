@@ -11,12 +11,10 @@ export default defineComponent({
   name: "ApBlank",
 
   props: {
-    status: {
-      type: String,
-      default: null
-    }
+
   },
   setup(props) {
+
   }
 })
 </script>

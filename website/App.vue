@@ -13,17 +13,6 @@ export default defineComponent({
 })
 </script>
 
-<style scoped>
-#app {
-  @apply static
-}
-/*.ap-header{*/
-/*  @apply sticky top-0*/
-/*}*/
-/*.ap-affix{*/
-/*  @apply top-11*/
-/*}*/
-/*.ap-button{*/
-/*  @apply w-32 h-12*/
-/*}*/
+<style>
+
 </style>

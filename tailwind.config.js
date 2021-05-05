@@ -1,6 +1,6 @@
 const colors = require('tailwindcss/colors')
-// const apple = require('./shared/colors/colors.ts')
-// const opacity = require('./shared/colors/opacity.ts')
+// const apple = require('./shared/colors/colors')
+// const opacity = require('./shared/colors/opacity')
 
 module.exports = {
   mode: 'jit',

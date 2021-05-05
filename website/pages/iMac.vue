@@ -29,6 +29,7 @@
     <img class="w-full" src="/static/3dm_1111_in_japan.jpg">
   </div>
   <Button></Button>
+  <Mask></Mask>
   <bread/>
   <bread home>
     <bread-item><a href="/">a</a></bread-item>
@@ -220,6 +221,7 @@ import Break from '/@/packages/break'
 import Bread from '/@/packages/bread'
 import BreadItem from '/@/packages/bread-item'
 import Footer from '/@/packages/footer'
+import Mask from  '/@/packages/mask'
 
 export default {
   name: "iMac",
@@ -232,10 +234,12 @@ export default {
     Break,
     Bread,
     BreadItem,
-    Footer
+    Footer,
+    Mask
   }
 }
 </script>
 
-<style>
+<style scoped>
+
 </style>

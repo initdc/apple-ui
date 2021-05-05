@@ -1,19 +1,20 @@
 <template>
-  <footer class="_footer">
-    <div class="_inner">
-      <slot></slot>
-    </div>
-  </footer>
+  <div class="_dropdown">
+
+  </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: "ApFooter",
+  name: "ApDropdown",
 
   props: {
-
+    status: {
+      type: String,
+      default: null
+    }
   },
   setup(props) {
   }

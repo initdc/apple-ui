@@ -1,6 +1,8 @@
 <template>
-  <teleport class="_drawer" to="body">
+  <teleport to="body">
+    <div class="_drawer">
 
+    </div>
   </teleport>
 </template>
 
