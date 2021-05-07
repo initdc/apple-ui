@@ -6,7 +6,6 @@
 import {defineComponent} from 'vue'
 import IMac from "./pages/iMac.vue";
 
-
 export default defineComponent({
   name: 'App',
   components: {IMac}

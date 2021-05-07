@@ -1,53 +1,55 @@
 ._affix {
-    @apply w-full h-12 md:h-13 sticky top-0
+  @apply w-full h-12 md:h-13 sticky top-0
     backdrop-filter backdrop-blur-lg  backdrop-saturate-100
     bg-opacity-affix-bg bg-white
     text-px-12 font-weight-400
-    text-affix-text
-}
+    text-affix-text;
 
-._affix > ._inner {
-    @apply flex flex-row
-}
+  & > ._inner {
+    @apply flex flex-row;
 
-._affix > ._inner > * {
-    @apply my-auto
-}
+    & > * {
+      @apply my-auto;
+    }
 
-._affix-title {
+    .curr,
+    .curr * {
+      @apply text-black text-opacity-affix-cur;
+    }
+
+    & > :not(._affix-title, ._affix-subtitle, ._button) {
+      @apply mr-3 inline-flex;
+    }
+
+    & > :not(._affix-title, ._affix-subtitle, ._button) > * {
+      @apply mr-4;
+    }
+  }
+
+  a[href] {
+    @apply text-affix-link text-opacity-affix-text;
+  }
+
+  a[href]:hover {
+    @apply text-link-product;
+  }
+
+  ._affix-title {
     @apply flex-shrink-0
-    text-px-19 md:text-px-21 font-weight-600 text-affix-title text-opacity-affix-text
-}
+        text-px-19 md:text-px-21 font-weight-600
+        text-affix-title text-opacity-affix-text;
 
-._affix-subtitle {
+    a:hover {
+      @apply text-affix-title;
+    }
+  }
+
+  ._affix-subtitle {
     @apply flex-shrink-0 ml-2
-    text-px-19 md:text-px-21 font-weight-400 text-subtitle
-}
+        text-px-19 md:text-px-21 font-weight-400 text-subtitle;
+  }
 
-._affix .break {
-    @apply bg-opacity-affix-bg bg-hr
-}
-
-._affix > ._inner .curr, ._affix > ._inner .curr *{
-    @apply text-black text-opacity-affix-cur
-}
-
-._affix > ._inner > :not(._affix-title, ._affix-subtitle, ._button) {
-    @apply mr-3 inline-flex
-}
-
-._affix > ._inner > :not(._affix-title, ._affix-subtitle, ._button) > * {
-    @apply mr-4
-}
-
-._affix a[href] {
-    @apply text-affix-link text-opacity-affix-text
-}
-
-._affix a[href]:hover {
-    @apply text-link-product
-}
-
-._affix ._affix-title a:hover {
-    @apply text-affix-title
+  .break {
+    @apply bg-opacity-affix-bg bg-hr;
+  }
 }

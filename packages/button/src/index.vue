@@ -1,5 +1,5 @@
 <template>
-  <button class="_button">
+  <button :type="type" :class="btnClass">
     <slot>Button</slot>
   </button>
 </template>
@@ -13,13 +13,30 @@ export default defineComponent({
   props: {
     type: {
       type: String,
-      default: 'button'
+      default: 'button',
+      validator (value: string) :boolean {
+        return ['button', 'submit', 'reset'].indexOf(value) !== -1
+      }
+    },
+    disabled: {
+      type: Boolean,
+      default: false
     },
     size: {
       type: String,
       default: 'sm'
-    },
+    }
+  },
+  setup(props) {
+    let btnClass :string
 
+    if (props.disabled){
+      btnClass = '_button disabled'
+    } else {
+      btnClass  = '_button'
+    }
+
+    return { btnClass }
   }
 })
 </script>

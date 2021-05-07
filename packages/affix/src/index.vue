@@ -31,16 +31,8 @@ export default defineComponent({
       default: null
     }
   },
-  setup(props) {
-    let title = props.title
-    let subtitle = props.subtitle
-    let link = props.link
+  setup() {
 
-    return {
-      title,
-      subtitle,
-      link
-    }
   }
 })
 </script>

@@ -5,8 +5,11 @@
 ## _blank
 
 -[ ] bg
+ 
 -[ ] text
+ 
 -[ ] font
+ 
 -[ ] :hover
 
 
@@ -24,8 +27,11 @@
 ## button
 
 -[ ] bg blue
+ 
 -[ ] text white
+ 
 -[ ] font 
+ 
 -[ ] :hover bg blue
 
 
@@ -33,9 +39,13 @@
 
 -[ ] bg black `( backdrop blur | opacity )`
 -[ ] text gray
+ 
 -[ ] font 400
+ 
 -[ ] :hover white
+ 
 -[ ] inner my px-3
+ 
 -[ ] icon my
 
 
@@ -63,7 +73,9 @@
 
 -[ ] bg white `( backdrop blur | opacity )`
 -[ ] text title black sub active gray
+ 
 -[ ] font 400 title 600 
+ 
 -[ ] a:hover text link
 
 
@@ -76,22 +88,29 @@
 
 *
   -[ ] my mx
+   
   -[ ] text black
+   
   -[ ] ap-button
 
 
 ## bread
 
 -[ ] bg gray
+ 
 -[ ] text 12
+ 
 -[ ] font 400
+ 
 -[ ] home:hover black
+ 
 -[ ] ::after symbol >
 
 -[ ] `slot`
 
 *
   -[ ] mr-1 my
+   
   -[ ] ap-bread-item
 
 
@@ -99,7 +118,9 @@
 ## footer
 
 -[ ] bg gray
+ 
 -[ ] text 12
+ 
 -[ ] font 400
 
 
@@ -107,4 +128,5 @@
 
 *
   -[ ] my mx
+   
   -[ ] ul/ol flex-col mx li mb

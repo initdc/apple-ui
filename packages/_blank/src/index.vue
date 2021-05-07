@@ -13,7 +13,7 @@ export default defineComponent({
   props: {
 
   },
-  setup(props) {
+  setup() {
 
   }
 })

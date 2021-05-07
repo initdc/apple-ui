@@ -1,54 +1,56 @@
 ._footer {
-    @apply w-full bg-footer-bg
-    text-px-12 font-weight-400 text-footer-text
-}
+  @apply w-full bg-footer-bg
+    text-px-12 font-weight-400 text-footer-text;
 
-._footer ._inner {
-    @apply flex flex-col py-4
-}
+  & > ._inner {
+    @apply flex flex-col py-4;
 
-._footer ul, ._footer ol {
-    @apply mb-3 mx-auto
-}
+    a {
+      @apply no-underline text-footer-text
+    hover:underline hover:text-footer-title;
+    }
 
-._footer ol {
-    @apply list-decimal pl-4
-}
+    & > :not(._bread , nav , .note) > a {
+      @apply no-underline text-link-product
+    hover:underline hover:text-link-product;
+    }
 
-._footer li {
-    @apply mb-2
-}
+    & > :not(._bread , nav , .note) > span {
+      @apply mr-2 inline-block;
+    }
+  }
 
-._footer li > p {
-    @apply mb-2
-}
+  ul,
+  ol {
+    @apply mb-3 mx-auto;
 
-._footer nav > ul > *, ._footer nav > ol > *{
-    @apply flex flex-col
-}
+    &:first-child {
+      @apply ml-0;
+    }
 
-._footer ul:first-child, ._footer ol:first-child {
-    @apply ml-0
-}
+    &:last-child {
+      @apply mr-0;
+    }
+  }
 
-._footer ul:last-child, ._footer ol:last-child {
-    @apply mr-0
-}
+  ol {
+    @apply list-decimal pl-4;
+  }
 
-._footer ._break {
-    @apply my-2
-}
+  li {
+    @apply mb-2;
+  }
 
-._footer ._inner a {
-    @apply no-underline text-footer-text
-    hover:underline hover:text-footer-title
-}
+  nav {
+    & > ul,
+    & > ol {
+      & > * {
+        @apply flex flex-col;
+      }
+    }
+  }
 
-._footer ._inner > :not(._bread , nav , .note) > a {
-    @apply no-underline text-link-product
-    hover:underline hover:text-link-product
-}
-
-._footer ._inner > :not(._bread , nav , .note) > span {
-    @apply mr-2
+  ._break {
+    @apply my-2;
+  }
 }

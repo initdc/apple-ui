@@ -23,15 +23,11 @@ export default defineComponent({
       default: '>'
     }
   },
-  setup(props) {
-    let home = props.home
-    let separator = props.symbol
-
-    return {home, separator}
+  setup() {
   },
   provide() {
     return {
-      separator: this.separator
+      separator: this.symbol
     }
   }
 })

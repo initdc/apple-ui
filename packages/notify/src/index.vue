@@ -1,5 +1,5 @@
 <template>
-  <div class="_notify" v-if="status">
+  <div class="_notify" v-if="ntfStatus">
     <div class="_inner">
       <slot></slot>
       <button class="_notify-close icon material-icons" @click="close">close</button>
@@ -22,16 +22,17 @@ export default defineComponent({
   setup(props) {
     let ntf = localStorage.getItem('notify')
     if (ntf === 'false') {
-      let status = ref(false)
-      return {status}
+      let ntfStatus = ref(false)
+      return {ntfStatus}
     }
 
-    let status = ref(props.status)
-    return {status}
+    let ntfStatus = ref(props.status)
+    return {ntfStatus}
+
   },
   methods: {
     close() {
-      this.status = false
+      this.ntfStatus = false
       localStorage.setItem('notify', 'false')
     }
   }

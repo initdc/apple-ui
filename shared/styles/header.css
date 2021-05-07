@@ -1,40 +1,41 @@
 ._header {
-    @apply w-full h-12 md:h-11 bg-black
+  @apply w-full h-12 md:h-11 bg-black
     backdrop-filter backdrop-blur-lg backdrop-saturate-100
     bg-opacity-header-bg
     text-px-14 font-weight-400
-    text-header-text
-}
+    text-header-text;
 
-._header > ._inner {
-    @apply flex flex-row
-}
+  & > ._inner {
+    @apply flex flex-row;
 
-._header > ._inner > * {
-    @apply my-auto
-    text-header-text hover:text-header-hover
-}
+    & > * {
+      @apply my-auto
+    text-header-text hover:text-header-hover;
+    }
 
-._header ._header-menu {
-    @apply ml-0 md:hidden
-}
+    .curr,
+    .curr * {
+      @apply text-header-text text-opacity-header-cur;
+    }
 
-._header ._header-home {
-    @apply mx-auto md:ml-0 md:mr-3
-}
+    & > :not(._header-menu, ._header-home, ._header-end) {
+      @apply hidden md:inline-flex flex-grow text-header-text hover:text-header-hover;
+    }
 
-._header ._header-end {
-    @apply ml-3 mr-0
-}
+    & > :not(._header-menu, ._header-home, ._header-end) > * {
+      @apply mx-auto text-header-text hover:text-header-hover;
+    }
+  }
 
-._header > ._inner .curr, ._header > ._inner .curr * {
-    @apply text-header-text text-opacity-header-cur
-}
+  ._header-menu {
+    @apply ml-0 md:hidden;
+  }
 
-._header > ._inner > :not(._header-menu, ._header-home, ._header-end) {
-    @apply  hidden md:inline-flex flex-grow text-header-text hover:text-header-hover
-}
+  ._header-home {
+    @apply mx-auto md:ml-0 md:mr-3;
+  }
 
-._header > ._inner > :not(._header-menu, ._header-home, ._header-end) > *{
-    @apply mx-auto text-header-text hover:text-header-hover
+  ._header-end {
+    @apply ml-3 mr-0;
+  }
 }

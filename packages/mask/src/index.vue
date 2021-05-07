@@ -1,10 +1,10 @@
 <template>
-  <label v-if="status" class="_mask" :style="style" @click="close">
-  </label>
+  <div v-show="maskStatus" class="_mask" :style="style" @click="showOff">
+  </div>
 </template>
 
 <script lang="ts">
-import {defineComponent, ref} from 'vue'
+import {defineComponent, ref, watch, watchEffect} from 'vue'
 import {catchEsc, catchWheel} from "../../../mixins/catchEvent"
 
 export default defineComponent({
@@ -14,32 +14,73 @@ export default defineComponent({
   props: {
     status: {
       type: Boolean,
-      default: true
+      default: false
     }
   },
   setup(props) {
-    let status = ref(props.status)
+    let maskStatus = ref(props.status)
     let style = ref({
       opacity: 1
     })
+    //
+    // function showOff() {
+    //   this.style = {
+    //     opacity: 0,
+    //   }
+    //   const maskFalse = () => {
+    //     this.maskStatus = false
+    //   }
+    //
+    //   setTimeout(maskFalse, 1000)
+    // }
+    //
+    // function showOn() {
+    //   this.maskStatus = true
+    //
+    //   this.style = {
+    //     opacity: 1,
+    //   }
+    // }
 
-    return {status, style}
+    return {style, maskStatus}
+  },
+  created() {
+    watch(() => this.status, (Status, prevStatus) => {
+      if (Status !== prevStatus) {
+        this.showOn()
+      }
+    })
   },
   methods: {
-    close() {
+    showOff() {
       this.style = {
         opacity: 0
       }
-      setTimeout(function () {
-          this.status = false
-        }, 1000
-      )
+      const maskFalse = () => {
+        this.maskStatus = false
+      }
+
+      setTimeout(maskFalse, 1000)
+    },
+    showOn() {
+      this.maskStatus = true
+      // this.style = {
+      //   opacity: 0
+      // }
+
+      const maskOpacity = () => {
+        this.style = {
+          opacity: 1
+        }
+      }
+
+      setTimeout(maskOpacity, 0)
     },
     escapeHandler() {
-      this.close()
+      this.showOff()
     },
     wheelHandler() {
-      this.close()
+      this.showOff()
     }
   }
 })

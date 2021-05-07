@@ -1,22 +1,24 @@
-._bread{
-    @apply inline-flex flex-shrink-0
+._bread {
+  @apply inline-flex flex-shrink-0
     text-px-12 font-weight-400
-    text-footer-text
-}
+    text-footer-text;
 
-._bread > *{
-    @apply my-auto
-}
+  & > * {
+    @apply my-auto;
+  }
 
-._bread ._bread-item a{
-    @apply no-underline
-    hover:underline hover:text-footer-title
-}
+  ._bread-item {
+    & a {
+      @apply no-underline
+    hover:underline hover:text-footer-title;
+    }
 
-._bread ._bread-item ._bread-home {
-    @apply text-px-20 no-underline hover:no-underline
-}
+    ._bread-home {
+      @apply text-px-20 no-underline hover:no-underline;
+    }
+  }
 
-._bread ._bread-separator:last-child {
-    @apply hidden
+  ._bread-separator:last-child {
+    @apply hidden;
+  }
 }

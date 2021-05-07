@@ -28,8 +28,8 @@
     <img src="/static/3dm_1111_in_japan_auto_x2.jpg">
     <img class="w-full" src="/static/3dm_1111_in_japan.jpg">
   </div>
-  <Button></Button>
-  <Mask></Mask>
+  <Button type="button" @click="mask = !mask"></Button>
+  <Mask :status="mask"></Mask>
   <bread/>
   <bread home>
     <bread-item><a href="/">a</a></bread-item>
@@ -193,14 +193,14 @@
     <p class="text-note">More ways to shop: <a>Find an Apple Store</a> or <a>other retailer</a> near you. Or call
       1-800-MY-APPLE.</p>
     <break/>
-    <div class="flex-shrink-0">
+    <div class="flex">
       <span class="text-note">Copyright © 2021 Apple Inc. All rights reserved.</span>
       <bread symbol="|">
         <bread-item><a href="/">Privacy Policy</a></bread-item>
         <bread-item><a href="/">Terms of Use</a></bread-item>
         <bread-item><a href="/">Sales and Refunds</a></bread-item>
         <bread-item><a href="/">Legal</a></bread-item>
-        <bread-item end><a href="/">Site Map</a></bread-item>
+        <bread-item><a href="/">Site Map</a></bread-item>
       </bread>
       <span class="flex-grow"></span>
       <span>
@@ -212,7 +212,8 @@
   </Footer>
 </template>
 
-<script>
+<script lang="ts">
+import { defineComponent, ref } from "vue";
 import Button from '/@/packages/button'
 import Header from '/@/packages/header'
 import Affix from '/@/packages/affix'
@@ -223,7 +224,7 @@ import BreadItem from '/@/packages/bread-item'
 import Footer from '/@/packages/footer'
 import Mask from  '/@/packages/mask'
 
-export default {
+export default defineComponent({
   name: "iMac",
 
   components: {
@@ -236,8 +237,12 @@ export default {
     BreadItem,
     Footer,
     Mask
+  },
+  setup() {
+    let mask = ref(false)
+    return { mask }
   }
-}
+})
 </script>
 
 <style scoped>
