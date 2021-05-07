@@ -33,6 +33,17 @@ module.exports = {
         'affix-cur': opacity.affix.current,
         'affix-link': opacity.affix.link
       },
+      screens: {
+        '720p': '720px',
+        '980p': '980px',
+        '1080p': '1080px',
+        '1440p': '1440px'
+      },
+      maxWidth: {
+        '1/4': '25%',
+        '1/2': '50%',
+        '3/4': '75%',
+      },
       fontSize: {
         'px-0': '0rem',
         'px-1': '0.125rem',

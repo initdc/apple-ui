@@ -4,7 +4,7 @@
 </template>
 
 <script lang="ts">
-import {defineComponent, ref, watch, watchEffect} from 'vue'
+import {defineComponent, ref, watch} from 'vue'
 import {catchEsc, catchWheel} from "../../../mixins/catchEvent"
 
 export default defineComponent({

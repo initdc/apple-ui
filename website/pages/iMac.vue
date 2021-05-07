@@ -19,6 +19,14 @@
     </ul>
     <Button>Order</Button>
   </Affix>
+
+  <Affix title='iMac 24"' subtitle="Preview" link="/" class="top-13">
+    <ul>
+      <li class="curr"><a>Overview</a></li>
+      <li><a href="/">Tech Specs</a></li>
+    </ul>
+    <Button>Order</Button>
+  </Affix>
   <notify>
     <a href="/">
       Evaluate COVID‑19 symptoms and understand next steps >
@@ -30,7 +38,7 @@
   </div>
   <Button type="button" @click="mask = !mask"></Button>
   <Mask :status="mask"></Mask>
-  <bread/>
+  <bread home/>
   <bread home>
     <bread-item><a href="/">a</a></bread-item>
     <bread-item><a href="/">b</a></bread-item>
@@ -193,17 +201,16 @@
     <p class="text-note">More ways to shop: <a>Find an Apple Store</a> or <a>other retailer</a> near you. Or call
       1-800-MY-APPLE.</p>
     <break/>
-    <div class="flex">
-      <span class="text-note">Copyright © 2021 Apple Inc. All rights reserved.</span>
-      <bread symbol="|">
+    <div class="flex flex-wrap">
+      <span class="text-note flex-shrink-0 mb-1">Copyright © 2021 Apple Inc. All rights reserved.</span>
+      <bread symbol="|" class="mb-1 flex-grow">
         <bread-item><a href="/">Privacy Policy</a></bread-item>
         <bread-item><a href="/">Terms of Use</a></bread-item>
         <bread-item><a href="/">Sales and Refunds</a></bread-item>
         <bread-item><a href="/">Legal</a></bread-item>
         <bread-item><a href="/">Site Map</a></bread-item>
       </bread>
-      <span class="flex-grow"></span>
-      <span>
+      <span class="flex-shrink-0">
         <a>
         United States
         </a>
