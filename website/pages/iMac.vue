@@ -29,8 +29,8 @@
     <img src="/static/3dm_1111_in_japan_auto_x2.jpg">
     <img class="w-full" src="/static/3dm_1111_in_japan.jpg">
   </div>
-  <Button type="button" @click="mask = !mask"></Button>
-  <Mask :status="mask"></Mask>
+  <Button type="button" @click="mask = true"></Button>
+  <Mask :status="mask" @input="(v) => mask=v"></Mask>
   <bread home/>
   <bread home>
     <bread-item><a href="/">a</a></bread-item>

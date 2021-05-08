@@ -2,6 +2,10 @@
 
 @import '../fonts/material.css';
 
+body {
+    @apply relative
+}
+
 button:focus{
     outline: none;
 }

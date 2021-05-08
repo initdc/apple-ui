@@ -1,6 +1,6 @@
 <template>
   <nav class="_affix">
-    <ap-mask to="body" :status="status" @input="onInput"></ap-mask>
+    <ap-mask :status="status" @input="onInput"></ap-mask>
     <div class="_inner">
       <h1 v-if="title" class="_affix-title"><a :href="link">{{ title }}</a></h1>
       <span v-if="subtitle" class="_affix-subtitle">{{ subtitle }}</span>

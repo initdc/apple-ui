@@ -44,7 +44,6 @@ export default defineComponent({
   methods: {
     showOff() {
       this.$emit('input', false)
-      this.maskStatus = true
 
       this.style = {
         opacity: 0
