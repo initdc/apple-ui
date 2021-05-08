@@ -19,7 +19,7 @@
     }
 
     & > :not(._affix-title, ._affix-subtitle, ._affix-space, ._affix-arrow, ._button) {
-      @apply hidden md:inline-flex mr-3;
+      @apply hidden md:flex md:flex-row mr-3;
     }
 
     & > :not(._affix-title, ._affix-subtitle, ._affix-space, ._affix-arrow, ._button) > * {

@@ -20,7 +20,7 @@
     }
 
     & > :not(._header-menu, ._header-home, ._header-end) {
-      @apply hidden md:inline-flex flex-grow text-header-text hover:text-header-hover;
+      @apply hidden md:flex md:flex-row flex-grow text-header-text hover:text-header-hover;
     }
 
     & > :not(._header-menu, ._header-home, ._header-end) > * {

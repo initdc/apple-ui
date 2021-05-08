@@ -1,5 +1,5 @@
 ._bread {
-  @apply inline-flex flex-shrink-0
+  @apply flex flex-row flex-shrink-0
     text-px-12 font-weight-400
     text-footer-text;
 
