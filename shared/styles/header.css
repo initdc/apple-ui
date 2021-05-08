@@ -1,4 +1,5 @@
 ._header {
+  z-index: 200;
   @apply w-full h-12 md:h-11 bg-black
     backdrop-filter backdrop-blur-lg backdrop-saturate-100
     bg-opacity-header-bg

@@ -1,9 +1,13 @@
 <template>
   <nav class="_affix">
+    <ap-mask to="body" :status="status" @input="onInput"></ap-mask>
     <div class="_inner">
       <h1 v-if="title" class="_affix-title"><a :href="link">{{ title }}</a></h1>
       <span v-if="subtitle" class="_affix-subtitle">{{ subtitle }}</span>
-      <span class="flex-grow"></span>
+      <span class="_affix-space"></span>
+      <button class="material-icons _affix-arrow" @click="toggleStatus">
+        {{ keyboardArrow }}
+      </button>
       <slot></slot>
     </div>
     <ap-break/>
@@ -11,12 +15,13 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import {defineComponent, ref, watch} from 'vue'
 import ApBreak from "../../break";
+import ApMask from "../../mask/src/index.vue";
 
 export default defineComponent({
   name: "ApAffix",
-  components: {ApBreak},
+  components: {ApMask, ApBreak},
   props: {
     title: {
       type: String,
@@ -32,7 +37,32 @@ export default defineComponent({
     }
   },
   setup() {
+    let keyboardArrow
+    let status
+    keyboardArrow = ref('keyboard_arrow_down')
+    status = ref(false)
 
+    return {keyboardArrow, status}
+  },
+  created() {
+    watch(()=> this.status, (status, prevStatus)=>{
+      if (status === true) this.toggleUp()
+      else this.toggleDown()
+    })
+  },
+  methods: {
+    toggleUp() {
+      this.keyboardArrow = 'keyboard_arrow_up'
+    },
+    toggleDown() {
+      this.keyboardArrow = 'keyboard_arrow_down'
+    },
+    toggleStatus() {
+      this.status = !this.status
+    },
+    onInput(value: boolean){
+      this.status = value
+    }
   }
 })
 </script>

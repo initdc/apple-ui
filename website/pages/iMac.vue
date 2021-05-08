@@ -20,13 +20,6 @@
     <Button>Order</Button>
   </Affix>
 
-  <Affix title='iMac 24"' subtitle="Preview" link="/" class="top-13">
-    <ul>
-      <li class="curr"><a>Overview</a></li>
-      <li><a href="/">Tech Specs</a></li>
-    </ul>
-    <Button>Order</Button>
-  </Affix>
   <notify>
     <a href="/">
       Evaluate COVID‑19 symptoms and understand next steps >
