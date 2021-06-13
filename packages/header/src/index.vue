@@ -10,13 +10,11 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent } from "vue";
 
 export default defineComponent({
   name: "ApHeader",
 
-  props: {
-
-  }
-})
+  props: {},
+});
 </script>

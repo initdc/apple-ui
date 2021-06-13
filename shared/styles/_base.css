@@ -1,27 +1,27 @@
 @import "tailwindcss/base";
 
-@import '../fonts/material.css';
+@import "../fonts/material.css";
 
 body {
-    @apply relative
+  @apply relative;
 }
 
-button:focus{
-    outline: none;
+button:focus {
+  outline: none;
 }
 
-._inner{
-    @apply w-auto max-w-screen-lg h-full mx-auto px-4 md:px-6
+._inner {
+  @apply w-auto max-w-screen-lg h-full mx-auto px-4 md:px-6;
 }
 
-.icon{
-    @apply flex-shrink-0
+.icon {
+  @apply flex-shrink-0;
 }
 
 .note {
-    @apply text-note
+  @apply text-note;
 }
 
 .disabled {
-    @apply cursor-not-allowed
+  @apply cursor-not-allowed;
 }

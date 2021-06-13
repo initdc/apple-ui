@@ -18,11 +18,14 @@
       @apply text-black text-opacity-affix-cur;
     }
 
-    & > :not(._affix-title, ._affix-subtitle, ._affix-space, ._affix-arrow, ._button) {
+    &
+      > :not(._affix-title, ._affix-subtitle, ._affix-space, ._affix-arrow, ._button) {
       @apply hidden md:flex md:flex-row mr-3;
     }
 
-    & > :not(._affix-title, ._affix-subtitle, ._affix-space, ._affix-arrow, ._button) > * {
+    &
+      > :not(._affix-title, ._affix-subtitle, ._affix-space, ._affix-arrow, ._button)
+      > * {
       @apply mr-4;
     }
   }
@@ -51,11 +54,11 @@
   }
 
   ._affix-space {
-    @apply flex-grow
+    @apply flex-grow;
   }
 
   ._affix-arrow {
-    @apply md:hidden mr-4 text-opacity-affix-cur text-affix-text
+    @apply md:hidden mr-4 text-opacity-affix-cur text-affix-text;
   }
 
   .break {

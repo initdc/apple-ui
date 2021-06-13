@@ -7,10 +7,12 @@
     "build:css": "sh ./scripts/build-css.sh",
     "build:package": "sh ./scripts/build-package.sh",
     "build:all": "sh ./scripts/build-all.sh",
+    "code:prettier": "prettier --write . {**/*,*}.{js,ts,jsx,tsx,vue,css}",
     "upgrade:dep": "yarn upgrade-interactive --latest ",
     "publish": "sh ./scripts/publish.sh",
     "site:dev": "vite",
-    "site:build": "vue-tsc --noEmit && vite build",
+    "site:build": "vite build",
+    "site:tsc-build": "vue-tsc --noEmit && vite build",
     "site:serve": "vite preview"
   },
   "repository": {
@@ -36,12 +38,14 @@
     "postcss": "^8.2.13",
     "postcss-import": "^14.0.1",
     "postcss-nested": "^5.0.5",
+    "prettier": "^2.3.1",
     "tailwindcss": "^2.1.2",
     "typescript": "^4.2.4",
     "vite": "^2.2.3"
   },
   "dependencies": {
-    "vue": "^3.0.11"
+    "vue": "^3.0.11",
+    "vue-router": "^3.5.1"
   },
   "directories": {
     "doc": "docs"

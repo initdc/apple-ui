@@ -1,7 +1,7 @@
 ._bread-item {
-    @apply mr-2 inline-block
+  @apply mr-2 inline-block;
 }
 
-._bread-separator{
-    @apply mr-2 text-note
+._bread-separator {
+  @apply mr-2 text-note;
 }

@@ -11,10 +11,10 @@
 ## Work with it
 
 ```shell
-yarn add apple-ui
+yarn add -D apple-ui
 ```
 
-import 
+import
 
 ## License
 

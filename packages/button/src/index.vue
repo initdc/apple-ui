@@ -5,7 +5,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent } from "vue";
 
 export default defineComponent({
   name: "ApButton",
@@ -13,30 +13,30 @@ export default defineComponent({
   props: {
     type: {
       type: String,
-      default: 'button',
-      validator (value: string) :boolean {
-        return ['button', 'submit', 'reset'].indexOf(value) !== -1
-      }
+      default: "button",
+      validator(value: string): boolean {
+        return ["button", "submit", "reset"].indexOf(value) !== -1;
+      },
     },
     disabled: {
       type: Boolean,
-      default: false
+      default: false,
     },
     size: {
       type: String,
-      default: 'sm'
-    }
+      default: "sm",
+    },
   },
   setup(props) {
-    let btnClass :string
+    let btnClass: string;
 
-    if (props.disabled){
-      btnClass = '_button disabled'
+    if (props.disabled) {
+      btnClass = "_button disabled";
     } else {
-      btnClass  = '_button'
+      btnClass = "_button";
     }
 
-    return { btnClass }
-  }
-})
+    return { btnClass };
+  },
+});
 </script>

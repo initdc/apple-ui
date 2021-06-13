@@ -10,12 +10,12 @@
     hover:underline hover:text-footer-title;
     }
 
-    & > :not(._bread , nav , .note) > a {
+    & > :not(._bread, nav, .note) > a {
       @apply no-underline text-link-product
     hover:underline hover:text-link-product;
     }
 
-    & > :not(._bread , nav , .note) > span {
+    & > :not(._bread, nav, .note) > span {
       @apply mr-2 inline-block;
     }
   }

@@ -1,11 +1,9 @@
 <template>
-  <div class="_dropdown">
-
-  </div>
+  <div class="_dropdown"></div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent } from "vue";
 
 export default defineComponent({
   name: "ApDropdown",
@@ -13,10 +11,9 @@ export default defineComponent({
   props: {
     status: {
       type: String,
-      default: null
-    }
+      default: null,
+    },
   },
-  setup() {
-  }
-})
+  setup() {},
+});
 </script>

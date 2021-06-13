@@ -1,15 +1,11 @@
-<template>
-
-</template>
+<template></template>
 
 <script>
-import {defineComponent, ref} from "vue";
+import { defineComponent, ref } from "vue";
 
 export default defineComponent({
-  name: "index"
-})
+  name: "index",
+});
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
