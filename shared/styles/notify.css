@@ -9,12 +9,8 @@
       @apply my-auto;
     }
 
-    & > :not(._notify-close) {
+    & > .slot {
       @apply flex-grow px-3 inline-block text-center;
-    }
-
-    & > :not(._notify-close) * {
-      @apply inline-block;
     }
   }
 
@@ -24,6 +20,6 @@
   }
 
   ._notify-close {
-    @apply mr-0;
+    @apply mx-2;
   }
 }

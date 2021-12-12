@@ -1,11 +1,11 @@
 <template>
-  <hr :class="breakClass" />
+  <div :class="lineClass" />
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
 export default defineComponent({
-  name: "ApBreak",
+  name: "ApLine",
   props: {
     direc: {
       type: String,
@@ -15,11 +15,11 @@ export default defineComponent({
     },
   },
   computed: {
-    breakClass(): string {
+    lineClass(): string {
       if (this.direc === "y") {
-        return "_break-y";
+        return "_line-y";
       }
-      return "_break-x";
+      return "_line-x";
     },
   },
 });

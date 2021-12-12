@@ -13,30 +13,27 @@
       @apply my-auto
     text-header-text hover:text-header-hover;
     }
+  }
+  .curr {
+    @apply text-header-text text-opacity-header-cur;
+  }
 
-    .curr,
-    .curr * {
-      @apply text-header-text text-opacity-header-cur;
-    }
-
-    & > :not(._header-menu, ._header-home, ._header-end) {
-      @apply hidden md:flex md:flex-row flex-grow text-header-text hover:text-header-hover;
-    }
-
-    & > :not(._header-menu, ._header-home, ._header-end) > * {
-      @apply mx-auto text-header-text hover:text-header-hover;
+  .slot {
+    @apply hidden md:flex md:flex-row flex-grow text-header-text hover:text-header-hover;
+    & > * {
+      @apply mx-auto my-auto text-header-text hover:text-header-hover;
     }
   }
 
   ._header-menu {
-    @apply ml-0 md:hidden;
+    @apply mx-2 md:hidden;
   }
 
   ._header-home {
-    @apply mx-auto md:ml-0 md:mr-3;
+    @apply mx-auto md:mx-2;
   }
 
   ._header-end {
-    @apply ml-3 mr-0;
+    @apply mx-2;
   }
 }

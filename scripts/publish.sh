@@ -1,5 +1,8 @@
 #! /bin/sh
 
-set -e
+main(){
+  set -e
+  npm publish --registry=https://registry.npmjs.org/
+}
 
-npm publish --registry=https://registry.npmjs.org/
+main

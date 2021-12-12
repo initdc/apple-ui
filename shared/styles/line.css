@@ -1,0 +1,7 @@
+._line-x {
+    @apply w-full h-px bg-hr mx-auto my-1;
+}
+
+._line-y {
+    @apply h-full w-px bg-hr my-auto mx-1;
+}

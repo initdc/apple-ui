@@ -1,3 +1,7 @@
-._break {
-  @apply w-full h-px bg-hr;
+._break-x {
+  @apply w-full h-px bg-hr mx-auto my-1;
+}
+
+._break-y {
+  @apply h-full w-px bg-hr my-auto mx-1;
 }

@@ -1,22 +1,18 @@
 <template>
   <Header>
-    <ul>
-      <li class="curr"><a href="/">Mac</a></li>
-      <li><a href="/">iPad</a></li>
-      <li><a href="/">iPhone</a></li>
-      <li><a href="/">Watch</a></li>
-      <li><a href="/">Music</a></li>
-      <li><a href="/">Support</a></li>
-      <li class="material-icons icon">
-        <a href="/">search</a>
-      </li>
-    </ul>
+    <span class="curr"><a href="/">Mac</a></span>
+    <span><a href="/">iPad</a></span>
+    <span><a href="/">iPhone</a></span>
+    <span><a href="/">Watch</a></span>
+    <span><a href="/">Music</a></span>
+    <span><a href="/">Support</a></span>
+    <span class="material-icons icon">
+      <a href="/">search</a>
+    </span>
   </Header>
   <Affix title='iMac 24"' subtitle="Preview" link="/">
-    <ul>
-      <li class="curr"><a>Overview</a></li>
-      <li><a href="/">Tech Specs</a></li>
-    </ul>
+    <span class="curr"><a>Overview</a></span>
+    <span><a href="/">Tech Specs</a></span>
     <Button>Order</Button>
   </Affix>
 
@@ -29,6 +25,7 @@
   </div>
   <Button type="button" @click="mask = true"></Button>
   <Mask :status="mask" @input="(v) => (mask = v)"></Mask>
+  <Checkbox></Checkbox>
   <bread home />
   <bread home>
     <bread-item><a href="/">a</a></bread-item>
@@ -36,7 +33,7 @@
     <bread-item></bread-item>
   </bread>
   <Footer>
-    <break></break>
+    <Line/>
     <ol class="flex flex-col note">
       <li>
         <a><i>The Croods: A New Age</i></a>
@@ -95,7 +92,7 @@
       United States. Apple Card is issued by Goldman Sachs Bank USA, Salt Lake
       City Branch.
     </p>
-    <break></break>
+    <Line/>
     <bread home class="mt-1 mb-4">
       <bread-item><a href="/">Mac</a></bread-item>
       <bread-item><a href="/">iMac</a></bread-item>
@@ -211,7 +208,7 @@
       More ways to shop: <a>Find an Apple Store</a> or
       <a>other retailer</a> near you. Or call 1-800-MY-APPLE.
     </p>
-    <break />
+    <Line />
     <div class="flex flex-wrap">
       <span class="text-note flex-shrink-0 mb-1"
         >Copyright © 2021 Apple Inc. All rights reserved.</span
@@ -232,15 +229,16 @@
 
 <script lang="ts">
 import { defineComponent, ref } from "vue";
-import Button from "/@/packages/button";
-import Header from "/@/packages/header";
-import Affix from "/@/packages/affix";
-import Notify from "/@/packages/notify";
-import Break from "/@/packages/break";
-import Bread from "/@/packages/bread";
-import BreadItem from "/@/packages/bread-item";
-import Footer from "/@/packages/footer";
-import Mask from "/@/packages/mask";
+import Button from "@apui/button";
+import Header from "@apui/header";
+import Affix from "@apui/affix";
+import Notify from "@apui/notify";
+import Line from "@apui/line";
+import Bread from "@apui/bread";
+import BreadItem from "@apui/bread-item";
+import Footer from "@apui/footer";
+import Mask from "@apui/mask";
+import Checkbox from "@apui/checkbox";
 
 export default defineComponent({
   name: "iMac",
@@ -250,11 +248,12 @@ export default defineComponent({
     Header,
     Affix,
     Notify,
-    Break,
+    Line,
     Bread,
     BreadItem,
     Footer,
     Mask,
+    Checkbox,
   },
   setup() {
     let mask = ref(false);

@@ -10,7 +10,9 @@
       <button class="material-icons _affix-arrow" @click="toggleStatus">
         {{ keyboardArrow }}
       </button>
-      <slot></slot>
+      <div class="slot">
+        <slot></slot>
+      </div>
     </div>
     <ap-break />
   </nav>
@@ -18,8 +20,8 @@
 
 <script lang="ts">
 import { defineComponent, ref, watch } from "vue";
-import ApBreak from "../../break";
-import ApMask from "../../mask/src/index.vue";
+import ApBreak from "@apui/break";
+import ApMask from "@apui/mask";
 
 export default defineComponent({
   name: "ApAffix",

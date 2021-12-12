@@ -60,7 +60,7 @@ module.exports = {
     process: "#636366",
   },
   footer: {
-    bg: "#f2f2f5",
+    bg: "#f5f5f7",
     title: "#1d1d1f",
     text: "#515154",
   },

@@ -1,7 +1,9 @@
 <template>
   <div class="_notify" v-if="ntfStatus">
     <div class="_inner">
-      <slot></slot>
+      <div class="slot">
+        <slot></slot>
+      </div>
       <button class="_notify-close icon material-icons" @click="close">
         close
       </button>
