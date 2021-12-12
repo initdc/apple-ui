@@ -4,7 +4,7 @@
     backdrop-filter backdrop-blur-lg  backdrop-saturate-100
     bg-opacity-affix-bg bg-white
     text-px-12 font-weight-400
-    text-affix-text text-opacity-affix-text;
+    text-affix-text;
 
   & > ._inner {
     @apply flex flex-row;
@@ -15,7 +15,7 @@
   }
 
   a[href] {
-    @apply text-affix-link;
+    @apply text-affix-link text-opacity-affix-text;
   }
 
   a[href]:hover {
