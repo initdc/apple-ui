@@ -16,7 +16,7 @@
     <Button>Order</Button>
   </Affix>
 
-  <notify>
+  <notify version="0.0.2">
     <a href="/"> Evaluate COVID‑19 symptoms and understand next steps > </a>
   </notify>
   <div>
